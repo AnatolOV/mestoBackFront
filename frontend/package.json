@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build &&  scp -r ./build/* oleinikov@158.160.30.12:/var/www/html"
+    "deploy": "npm run build &&  scp -r ./build/* oleinikov@158.160.30.12:/var/www/oleinikov.nomoreparties.co"
   },
   "eslintConfig": {
     "extends": [
