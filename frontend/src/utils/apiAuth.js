@@ -11,9 +11,10 @@ function handleReply(res) {
 
 export function register(data) {
   return fetch(`${BASE_URL}/signup`, {
+    mode: 'no-cors',
     method: 'POST',
     headers: {
-      "Access-Control-Allow-Origin": "*",
+      'Access-Control-Allow-Origin': '*',
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(data),
