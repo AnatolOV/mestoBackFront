@@ -8,11 +8,11 @@ const error500 = require('./middlewares/error500');
 
 // const ERROR_404_NOTFOUND = 404;
 
-const { PORT = 3001 } = process.env;
+const { PORT = 3000 } = process.env;
 const app = express();
 // app.use(cors({origin: ['htttp://localhost:3001'], credentials: true, maxAge:30}));
-app.use(cors({ origin: ['http://localhost:3001', 'http://localhost:3000', 'http://oleinikov.nomoreparties.co', 'http://api.oleinikov.nomoreparties.co'] }));
-console.log(PORT);
+app.use(cors({ origin: ['http://localhost:3001', 'https://oleinikov.nomoreparties.co'] }));
+// console.log(PORT);
 mongoose
   .connect('mongodb://127.0.0.1:27017/mestodb')
   .then(() => console.log('Подключено к Mongo успешно'))

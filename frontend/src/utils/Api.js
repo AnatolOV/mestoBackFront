@@ -106,7 +106,7 @@ class Api {
 // объект класса Api
  
 const api = new Api({
-  url: "http://localhost:3001",
+  url: "http://localhost:3000",
   headers: {
     "Content-Type": "application/json",
     // authorization: "839f0bcd-454c-4502-9292-a3578896039c",
