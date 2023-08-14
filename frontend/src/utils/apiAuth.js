@@ -1,5 +1,5 @@
 // export const BASE_URL = ' https://auth.nomoreparties.co';
-export const BASE_URL = 'http://api.oleinikov.nomoreparties.co';
+export const BASE_URL = 'http://localhost:3001';
 
 
 function handleReply(res) {
@@ -11,10 +11,8 @@ function handleReply(res) {
 
 export function register(data) {
   return fetch(`${BASE_URL}/signup`, {
-    mode: 'no-cors',
     method: 'POST',
     headers: {
-      'Access-Control-Allow-Origin': '*',
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(data),
@@ -26,7 +24,6 @@ export function login(data) {
   return fetch(`${BASE_URL}/signin`, {
     method: 'POST',
     headers: {
-      "Access-Control-Allow-Origin": "*",
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(data),
@@ -37,7 +34,6 @@ export function checkToken(token) {
   return fetch(`${BASE_URL}/users/me`, {
     method: 'GET',
     headers: {
-      "Access-Control-Allow-Origin": "*",
       'Content-Type': 'application/json',
       Authorization: `Bearer ${token}`,
     },

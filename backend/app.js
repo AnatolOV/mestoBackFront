@@ -11,7 +11,7 @@ const error500 = require('./middlewares/error500');
 const { PORT = 3001 } = process.env;
 const app = express();
 // app.use(cors({origin: ['htttp://localhost:3001'], credentials: true, maxAge:30}));
-app.use(cors({ origin: ['*'] }));
+app.use(cors({ origin: ['http://localhost:3001', 'http://localhost:3000'] }));
 console.log(PORT);
 mongoose
   .connect('mongodb://127.0.0.1:27017/mestodb')
