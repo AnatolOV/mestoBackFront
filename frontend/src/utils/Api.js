@@ -114,3 +114,11 @@ const api = new Api({
 });
 
 export default api;
+// const { NODE_ENV } = process.env;
+
+// export let BASE_URL;
+// if (NODE_ENV === 'production') {
+//   BASE_URL = 'https://api.oleinikov.nomoreparties.co';
+// } else {
+//   BASE_URL = 'http://localhost:3001';
+// }
